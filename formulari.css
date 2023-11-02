@@ -1,0 +1,44 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Estil per les entrades de text curt i de correu electrónic */
+.input-style {
+    width: 300px;
+}
+
+/* Estil per l'entrada numérica */
+#edat {
+    width: 100px;
+}
+
+/* Estil per el botó */
+button {
+    width: 150px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Efecte hover per els botons */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Efecte focus per tots els elements */
+*:focus {
+    outline: 2px solid #4CAF50;
+}
+
+#enviat{
+    color: #4CAF50;
+}

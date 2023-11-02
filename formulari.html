@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link rel="stylesheet" type="text/css" href="formulari.css" />
+</head>
+<body>
+    <div class="container">
+    <h1>Subscriu-te al noticiari ITIC Barcelona</h1>
+    <form action="formulari_enviat.html" method="post">
+        <h4>Primer, explica'ns qui ets</h4>
+        <!-- Entrada de correu electrònic -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <!-- Entrada de text curt -->
+        <label for="nom">Nom i cognoms:</label>
+        <input type="text" id="nom" name="nom" required>
+        <br>
+        <!-- Entrada numèrica -->
+        <label for="edat">Edat:</label>
+        <input type="number" id="edat" name="edat" required>
+        <br>
+        <!-- Radio buttons -->
+        <h4>Quin cicle estàs estudiant?</h4>
+        <input type="radio" id="asix" name="cicle" value="asix">
+        <label for="home">ASIX</label>
+        <br>
+        <input type="radio" id="dam" name="cicle" value="dam">
+        <label for="dona">DAM</label>
+        <br>
+        <input type="radio" id="daw" name="cicle" value="daw">
+        <label for="altre">DAW</label>
+
+        <!-- Entrada de text desplegable -->
+        <h4>I en quin curs?</h4>
+        <select id="curs" name="curs" required>
+            <option value="selecciona" disabled selected hidden>Selecciona un curs...</option>
+            <option value="primer">Primer</option>
+            <option value="segon">Segon</option>
+        </select>
+
+        <!-- Checkbox -->
+        <h4>Marca els temes que vulguis estar sempre al dia!</h4>
+        <input type="checkbox" id="preference1" name="preferencies[]" value="ia">
+        <label for="preference1">Intel·ligència artificial</label>
+        <br>
+        <input type="checkbox" id="preference2" name="preferencies[]" value="computacio">
+        <label for="preference2">Computació quàntica</label>
+        <br>
+        <input type="checkbox" id="preference3" name="preferencies[]" value="upercomputadprs">
+        <label for="preference3">Supercomputadprs</label>
+        <br>
+        <input type="checkbox" id="preference3" name="preferencies[]" value="recerca">
+        <label for="preference3">Recerca en algorísmia</label>
+        <br>
+        <br>
+        <!-- Entrada de text llarg -->
+        <label for="comentaris">Hi ha algun tema més que t'interessi? Explica'ns-ho!</label><br>
+        <textarea id="comentaris" name="comentaris" placeholder="També m'agradaria saber les últimes novetats sobre..." required></textarea>
+        <br>
+        <!-- Botó per enviar el formulari -->
+        <button type="submit">Subscriu-me</button>
+    </form>
+    </div>
+</body>
+</html>
